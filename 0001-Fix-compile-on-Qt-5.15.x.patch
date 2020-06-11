@@ -1,7 +1,7 @@
-From 3161b1d2ce2332cf358d96fdf0cc67a786c70bb5 Mon Sep 17 00:00:00 2001
+From e7b8c986b90afacc348ef5a3da0d96ed9f0cf17b Mon Sep 17 00:00:00 2001
 From: Francisco Boni <boboniboni@gmail.com>
-Date: Sun, 7 Jun 2020 18:47:27 -0300
-Subject: [PATCH] Fix compile on Qt 5.15.0
+Date: Thu, 11 Jun 2020 09:49:57 -0300
+Subject: [PATCH] Fix compile on Qt 5.15.x
 
 ---
  flameshot.pro                                            | 2 +-
