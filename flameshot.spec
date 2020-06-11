@@ -4,10 +4,10 @@
 #
 %define keepstatic 1
 Name     : flameshot
-Version  : 1
-Release  : 3
-URL      : file:///insilications/build/clearlinux/packages/flameshot/flameshot.zip
-Source0  : file:///insilications/build/clearlinux/packages/flameshot/flameshot.zip
+Version  : 19.10.01
+Release  : 6
+URL      : file:///insilications/build/clearlinux/packages/flameshot/flameshot-19.10.01.zip
+Source0  : file:///insilications/build/clearlinux/packages/flameshot/flameshot-19.10.01.zip
 Summary  : Powerful yet simple to use screenshot software
 Group    : Development/Tools
 License  : Apache-2.0 GPL-3.0
@@ -26,7 +26,7 @@ BuildRequires : pkgconfig(Qt5Svg)
 BuildRequires : pkgconfig(Qt5Widgets)
 BuildRequires : qttools
 BuildRequires : qttools-dev
-Patch1: 0001-Fix-compile-on-Qt-5.15.0.patch
+Patch1: 0001-Fix-compile-on-Qt-5.15.x.patch
 
 %description
 Flameshot is a screenshot software, it's
@@ -50,8 +50,8 @@ data components for the flameshot package.
 
 
 %prep
-%setup -q -n flameshot
-cd %{_builddir}/flameshot
+%setup -q -n flameshot-19.10.01
+cd %{_builddir}/flameshot-19.10.01
 %patch1 -p1
 
 %build
@@ -85,7 +85,7 @@ test -r config.log && cat config.log
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1591569041
+export SOURCE_DATE_EPOCH=1591890148
 rm -rf %{buildroot}
 %make_install
 
