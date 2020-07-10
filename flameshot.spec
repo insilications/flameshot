@@ -5,9 +5,9 @@
 %define keepstatic 1
 Name     : flameshot
 Version  : 19.10.01
-Release  : 7
-URL      : file:///insilications/build/clearlinux/packages/flameshot/flameshot-19.10.01.zip
-Source0  : file:///insilications/build/clearlinux/packages/flameshot/flameshot-19.10.01.zip
+Release  : 8
+URL      : /insilications/build/clearlinux/packages/flameshot/flameshot-19.10.01.zip
+Source0  : /insilications/build/clearlinux/packages/flameshot/flameshot-19.10.01.zip
 Summary  : Powerful yet simple to use screenshot software
 Group    : Development/Tools
 License  : Apache-2.0 GPL-3.0
@@ -85,7 +85,7 @@ test -r config.log && cat config.log
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1592518389
+export SOURCE_DATE_EPOCH=1594423923
 rm -rf %{buildroot}
 %make_install
 
