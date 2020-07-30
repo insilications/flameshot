@@ -7,3 +7,4 @@ qttools-dev
 openssl-dev
 ca-certs
 ca-certs-static
+findutils
